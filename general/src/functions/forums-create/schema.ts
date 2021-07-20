@@ -3,13 +3,13 @@ export default {
   properties: {
     id: { type: 'string' },
     title: { type: 'string' },
-    tags: { type: 'List<string>' },
+    tags: { type: 'array' },
     username: { type: 'string' },
     createdAt: { type: 'string' },
     content: { type: 'string' },
     likes: { type: 'number' },
     numberOfComments: { type: 'number' },
-    comments: { type: 'List<object>' },
+    comments: { type: 'array' },
 
   },
   required: [
