@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"id\": \"example-id\", \"title\": \"I invented a new word!\", \"tags\": [\"gaming\", \"fencing\"], \"username\": \"dustindiaz\", \"createdAt\": \"2021-07-20T01:14:09.360Z\", \"content\": \"idk\", \"likes\": 2, \"comments\": [{\"id\": \"comment-id-1\", \"createdAt\": \"2021-07-20T01:14:09.360Z\", \"content\": \"Cool story bro\", \"likes\": 100, \"username\": \"alice\"}, {\"id\": \"comment-id-2\", \"createdAt\": \"2021-07-20T01:14:09.360Z\", \"content\": \"Nice.\", \"likes\": 100, \"username\": \"bob\"}]}"
+}
