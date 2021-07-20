@@ -29,14 +29,14 @@ export interface User {
 
 export interface Message {
   id: string,
-  user: User,
+  username: string,
   content: string,
   createdAt: string,
 }
 
 export interface ChatRoomUser  {
   id: string,
-  user: User,
+  username: string,
   isModerator: boolean,
   isAdmin: boolean,
 }
@@ -46,7 +46,7 @@ export interface ChatRoom {
   title: string,
   users: ChatRoomUser[],
   messages: Message[],
-  lastMessage: Message,
+  lastMessage?: Message,
 }
 
 export interface Forum  {

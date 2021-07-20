@@ -6,7 +6,7 @@ export class ChatRoomRepository extends Repository<ChatRoom> {
   constructor() {
     super(
       TableName,
-      'Forum',
+      'ChatRoom',
       'id, title, username, messages, lastMessage',
     );
   }

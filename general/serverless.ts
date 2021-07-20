@@ -2,11 +2,17 @@
 import type { AWS } from '@serverless/typescript';
 import hello from '@functions/hello';
 
+import forumCreate from '@functions/forums-create';
 import forumsGetAll from '@functions/forums-get-all';
 import forumGetById from '@functions/forums-get-by-id';
-import forumDeleteById from '@functions/forums-delete-by-id';
 import forumUpdate from '@functions/forums-update';
-import forumCreate from '@functions/forums-create';
+import forumDeleteById from '@functions/forums-delete-by-id';
+
+import chatRoomCreate from '@functions/chatroom-create';
+import chatRoomGetAll from '@functions/chatroom-get-all';
+import chatRoomGetById from '@functions/chatroom-get-by-id';
+import chatRoomUpdate from '@functions/chatroom-update';
+import chatRoomDelete from '@functions/chatroom-delete-by-id';
 
 import TableName from './src/dynamo/consts';
 // import deleteTable from './src/dynamo/deleteTable';
@@ -67,6 +73,11 @@ const serverlessConfiguration: AWS = {
     forumDeleteById,
     forumUpdate,
     forumCreate,
+    chatRoomCreate,
+    chatRoomGetAll,
+    chatRoomGetById,
+    chatRoomUpdate,
+    chatRoomDelete,
   },
 };
 
