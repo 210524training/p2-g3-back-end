@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"id\": \"chatroom-example-id\", \"title\": \"This is not chatroom!\", \"users\": [\"dustindiaz\", \"dustindiaz2\"], \"messages\": [{\"id\": \"m1\", \"username\": \"dustindiaz\", \"content\": \"Hello, you!\", \"createdAt\": \"2021-07-20T02:25:06.177Z\"}, {\"id\": \"m2\", \"username\": \"dustindiaz2\", \"content\": \"Hello, heheh!\", \"createdAt\": \"2021-07-20T02:25:06.177Z\"}], \"lastMessage\": {\"id\": \"m2\", \"username\": \"dustindiaz2\", \"content\": \"Hello, heheh!\", \"createdAt\": \"2021-07-20T02:25:06.177Z\"} }"
+}

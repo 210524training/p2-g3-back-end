@@ -6,17 +6,12 @@ export default {
   events: [
     {
       http: {
-        method: 'delete',
-        path: 'forums/{id}',
+        method: 'get',
+        path: 'chats/{id}',
         request: {
           schema: {
             'application/json': schema,
           },
-          // parameters: {
-          //   paths: {
-          //     id: true,
-          //   },
-          // },
         },
         cors: true,
       },
