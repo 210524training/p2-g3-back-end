@@ -7,7 +7,8 @@ export default {
     {
       http: {
         method: 'put',
-        path: 'forum',
+
+        path: 'forums',
         request: {
           schema: {
             'application/json': schema,
