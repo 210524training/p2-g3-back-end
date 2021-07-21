@@ -5,7 +5,7 @@ import { formatJSONResponse } from '@libs/apiGateway';
 import { middyfy } from '@libs/lambda';
 import repository from '@libs/repositories/forurm-repository';
 
-const getAllForums: ValidatedEventAPIGatewayProxyEvent<unknown> = async (event, context) => {
+const getAllForums: ValidatedEventAPIGatewayProxyEvent<unknown> = async () => {
   const forums = await repository.getAll();
   return (
     formatJSONResponse({

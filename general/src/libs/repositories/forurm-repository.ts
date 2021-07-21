@@ -1,5 +1,4 @@
 import { Forum } from 'src/@types/index.d';
-import TableName from '../../dynamo/consts';
 import Repository from './repository';
 
 export class ForumRepository extends Repository<Forum> {

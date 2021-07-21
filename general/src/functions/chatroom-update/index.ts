@@ -6,8 +6,9 @@ export default {
   events: [
     {
       http: {
-        method: 'post',
+        method: 'put',
         path: 'chats',
+        integration: 'lambda',
         request: {
           schema: {
             'application/json': schema,

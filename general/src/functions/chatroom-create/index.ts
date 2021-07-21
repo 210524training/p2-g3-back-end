@@ -7,7 +7,8 @@ export default {
     {
       http: {
         method: 'post',
-        path: 'chats',
+        path: 'create/chat',
+        integration: 'lambda',
         request: {
           schema: {
             'application/json': schema,

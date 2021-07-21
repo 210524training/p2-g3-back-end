@@ -4,13 +4,10 @@ import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/apiGateway';
 import { formatJSONResponse } from '@libs/apiGateway';
 import { middyfy } from '@libs/lambda';
 import repository from '@libs/repositories/forurm-repository';
-import schema from './schema';
 
-const getForumById: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
-  let { id } = event.body;
-  if (!id && event.pathParameters) {
-    id = event.pathParameters.id;
-  }
+const getForumById: ValidatedEventAPIGatewayProxyEvent<unknown> = async (event) => {
+  const { id } = event.pathParameters;
+
   if (id) {
     const forum = await repository.getById(id);
     return (

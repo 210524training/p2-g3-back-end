@@ -46,8 +46,8 @@ const serverlessConfiguration: AWS = {
       'Purpose': 'backend for p2',
     },
     apiGateway: {
-      minimumCompressionSize: 1024,
-      shouldStartNameWithService: true,
+      // minimumCompressionSize: 1024,
+      // shouldStartNameWithService: true,
     },
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
