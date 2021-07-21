@@ -19,6 +19,9 @@ import TableName from './src/dynamo/consts';
 const serverlessConfiguration: AWS = {
   service: 'p2g3-chatapredu-backend',
   frameworkVersion: '2',
+  package: {
+    individually: true,
+  },
   custom: {
     esbuild: {
       bundle: true,
@@ -38,7 +41,7 @@ const serverlessConfiguration: AWS = {
     name: 'aws',
     region: 'us-east-1',
     runtime: 'nodejs14.x',
-    profile: 'sls',
+    profile: 'sls-kiwi',
     stackTags: {
       'Created By': 'Dustin Diaz',
       'Delete After': '08/13/21',
