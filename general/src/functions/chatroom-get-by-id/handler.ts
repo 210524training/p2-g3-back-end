@@ -4,13 +4,10 @@ import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/apiGateway';
 import { formatJSONResponse } from '@libs/apiGateway';
 import { middyfy } from '@libs/lambda';
 import repository from '@libs/repositories/chat-room-repository';
-import schema from './schema';
 
-const getChatRoomById: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
-  let { id } = event.body;
-  if (!id && event.pathParameters) {
-    id = event.pathParameters.id;
-  }
+const getChatRoomById: ValidatedEventAPIGatewayProxyEvent<unknown> = async (event) => {
+  const { id } = event.path;
+
   if (id) {
     const chatRoom = await repository.getById(id);
     return (

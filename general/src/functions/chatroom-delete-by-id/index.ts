@@ -6,7 +6,7 @@ export default {
     {
       http: {
         method: 'delete',
-        path: 'delete/chat/{id}',
+        path: 'chats/{id}',
         integration: 'lambda',
         cors: true,
       },

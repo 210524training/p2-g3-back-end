@@ -6,7 +6,7 @@ import { middyfy } from '@libs/lambda';
 import repository from '@libs/repositories/forurm-repository';
 
 const getForumById: ValidatedEventAPIGatewayProxyEvent<unknown> = async (event) => {
-  const { id } = event.pathParameters;
+  const { id } = event.path;
 
   if (id) {
     const forum = await repository.delete(id);

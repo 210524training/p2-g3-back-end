@@ -8,6 +8,7 @@ import repository from '@libs/repositories/chat-room-repository';
 import schema from './schema';
 
 const createForum: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
+  console.log(event);
   const chatRoom: ChatRoom = event?.body;
 
   if (chatRoom) {

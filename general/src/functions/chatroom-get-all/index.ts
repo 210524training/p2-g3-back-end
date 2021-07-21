@@ -6,7 +6,7 @@ export default {
     {
       http: {
         method: 'get',
-        path: 'get/chats',
+        path: 'chats',
         integration: 'lambda',
         cors: true,
       },
