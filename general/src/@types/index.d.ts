@@ -11,7 +11,7 @@ export interface IEntity {
 }
 
 export interface User {
-  id?: string,
+  id: string,
   email: string,
   phoneNumber?: string,
   username: string,
