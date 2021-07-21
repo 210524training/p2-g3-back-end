@@ -5,10 +5,15 @@
 Here goes your awesome project description!
 
 ## Technologies Used
-
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* JavaScript/TypeScript
+* Node.js
+* AWS Lambda
+* AWS API Gateway
+* Serverless Framework
+* DynamoDB
+* Cognito
+* AWS Amplify
+* AWS S3
 
 ## Features
 
