@@ -8,7 +8,7 @@ export default {
       http: {
         method: 'put',
         path: 'chats',
-        integration: 'lambda',
+        // integration: 'lambda',
         request: {
           schema: {
             'application/json': schema,

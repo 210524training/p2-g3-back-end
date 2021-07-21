@@ -8,7 +8,7 @@ export default {
       http: {
         method: 'post',
         path: 'forums',
-        integration: 'lambda',
+        // integration: 'lambda',
         request: {
           schema: {
             'application/json': schema,
