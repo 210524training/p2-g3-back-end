@@ -2,16 +2,14 @@ export default {
   type: 'object',
   properties: {
     id: { type: 'string' },
-    title: { type: 'string' },
-    users: { type: 'array' },
-    messages: { type: 'array' },
-    lastMessage: { type: 'object' },
+    username: { type: 'string' },
+    contacts: { type: 'array' },
+    chatRoomIds: { type: 'array' },
   },
   required: [
     'id',
-    'title',
-    'users',
-    'messages',
-    'lastMessage',
+    'username',
+    'contacts',
+    'chatRoomIds',
   ],
 } as const;
