@@ -14,6 +14,12 @@ import chatRoomGetById from '@functions/chatroom-get-by-id';
 import chatRoomUpdate from '@functions/chatroom-update';
 import chatRoomDelete from '@functions/chatroom-delete-by-id';
 
+import usersCreate from '@functions/user-create';
+import usersGetAll from '@functions/user-get-all';
+import usersGetById from '@functions/user-get-by-id';
+import usersUpdate from '@functions/user-update';
+import usersDelete from '@functions/user-delete-by-id';
+
 import TableName from './src/dynamo/consts';
 
 const serverlessConfiguration: AWS = {
@@ -41,7 +47,7 @@ const serverlessConfiguration: AWS = {
     name: 'aws',
     region: 'us-east-1',
     runtime: 'nodejs14.x',
-    profile: 'sls-kiwi',
+    profile: 'sls',
     stackTags: {
       'Created By': 'Dustin Diaz',
       'Delete After': '08/13/21',
@@ -139,6 +145,11 @@ const serverlessConfiguration: AWS = {
     chatRoomGetById,
     chatRoomUpdate,
     chatRoomDelete,
+    usersCreate,
+    usersGetAll,
+    usersGetById,
+    usersUpdate,
+    usersDelete,
   },
 
   resources: {
