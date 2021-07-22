@@ -17,7 +17,7 @@ This is the backend setup for the Chatapredu application. This connects the fron
 
 > First navigate to the location where you would like to store a clone of this repository on your local device using Git Bash. Use the following command:
   - `git clone https://github.com/210524training/p2-g3-back-end.git`
-> Once you have a clone on your local device, open the p2-g3-back-end folder in the terminal by type in the following commands: 
+> Once you have a clone on your local device, open the p2-g3-back-end folder in the terminal and install the required dependancies by typing in the following commands: 
   - `git`
   - `cd p2-g3-back-end`
   - `cd general`
