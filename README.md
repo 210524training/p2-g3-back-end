@@ -6,12 +6,12 @@ This is the backend setup for the Chatapredu application. This connects the fron
 
 ## Technologies Used
 * JavaScript/TypeScript
-* Node.js
-* AWS Lambda
-* AWS API Gateway
-* Serverless Framework
-* DynamoDB
-* AWS S3
+* [Node.js](https://nodejs.org/en/)
+* [AWS Lambda](https://aws.amazon.com/lambda/)
+* [AWS API Gateway](https://aws.amazon.com/api-gateway/)
+* [Serverless Framework](https://www.serverless.com/)
+* [DynamoDB](https://aws.amazon.com/dynamodb/)
+* [AWS S3](https://aws.amazon.com/s3/)
 
 ## Get Started
 
