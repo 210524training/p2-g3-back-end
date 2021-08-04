@@ -26,7 +26,7 @@ This is the backend setup for the Chatapredu application. This connects the fron
 
 ## Usage
 
-> To deploy the application, make sure you are in the same directory as the previous section, then run the bellow command: 
+> To deploy the application, make sure you are in the same directory as the previous section, then run the below command: 
   - `sls deploy`
 
 ## License
