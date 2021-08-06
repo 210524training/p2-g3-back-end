@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is the back-end setup for the Chatapredu application. This connects the front-end of our application to DynamoDB for storing chat and forum discussion data. We are storing and authenticating user information for user accountsUsing Cognito and Amplify . This backend handles the main CRUD operations of the application to store and edit data stored in the database system.
+This is the back-end setup for the Chatapredu application. This connects the front-end of our application to DynamoDB for storing chat and forum discussion data. We are storing and authenticating user information for user accounts using Cognito and Amplify . This back-end handles the main CRUD operations of the application to store and edit data stored in the database system.
 
 ## Technologies Used
 * JavaScript/TypeScript
